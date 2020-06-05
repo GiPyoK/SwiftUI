@@ -25,20 +25,6 @@ struct GridView: View {
                 }
             }
         }
-//        List {
-//            // rows
-//            ForEach(0..<5) { _ in
-//                HStack {
-//                    // columns
-//                    ForEach(0..<2) { _ in
-//                        Image("sal")
-//                            .resizable()
-//                            .scaledToFit()
-//                    }
-//                }
-//            }
-//        }
-        
     }
 }
 
