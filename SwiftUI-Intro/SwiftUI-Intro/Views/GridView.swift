@@ -9,8 +9,36 @@
 import SwiftUI
 
 struct GridView: View {
+    
+    let dishes = Dish.all()
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        let chunkedDishes = dishes.chunked(into: 2)
+        return List {
+            ForEach(0..<chunkedDishes.count) { index in
+                HStack {
+                    ForEach(chunkedDishes[index]) { dish in
+                        Image(dish.imageURL)
+                            .resizable()
+                            .scaledToFit()
+                    }
+                }
+            }
+        }
+//        List {
+//            // rows
+//            ForEach(0..<5) { _ in
+//                HStack {
+//                    // columns
+//                    ForEach(0..<2) { _ in
+//                        Image("sal")
+//                            .resizable()
+//                            .scaledToFit()
+//                    }
+//                }
+//            }
+//        }
+        
     }
 }
 
