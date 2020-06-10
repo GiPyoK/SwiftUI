@@ -9,8 +9,19 @@
 import SwiftUI
 
 struct ContentView: View {
+    
+    @State var name: String = "John"
+    
     var body: some View {
-        Text("Hello, World!")
+        VStack {
+            Text(name).font(.largeTitle)
+            
+            Button(action: {
+                self.name = "Gi Pyo"
+            }) {
+                Text("Change Name")
+            }
+        }
     }
 }
 
