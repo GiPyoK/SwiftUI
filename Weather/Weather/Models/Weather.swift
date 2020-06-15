@@ -7,12 +7,14 @@
 //
 
 import Foundation
+import SwiftUI
+import Combine
 
 struct WeatherResponse: Decodable {
-    let main: Weather
+    let main: WeatherModel
 }
 
-struct Weather: Decodable {
+struct WeatherModel: Decodable {
     var temp: Double?
     var humidity: Double?
 }

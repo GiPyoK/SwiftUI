@@ -13,7 +13,7 @@ class WeatherViewModel: ObservableObject {
         
     private var weatherService: WeatherService
     
-    @Published var weather = Weather()
+    @Published var weather = WeatherModel()
     
     var temperature: String {
         if let temp = self.weather.temp {
@@ -40,7 +40,9 @@ class WeatherViewModel: ObservableObject {
     private func fetchWeather(by city: String) {
         self.weatherService.getWeather(city: city) { (weather) in
             if let weather = weather {
-                self.weather = weather
+                DispatchQueue.main.async {
+                    self.weather = weather                    
+                }
             }
         }
     }

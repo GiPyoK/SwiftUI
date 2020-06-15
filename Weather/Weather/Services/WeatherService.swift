@@ -10,8 +10,8 @@ import Foundation
 
 class WeatherService {
     
-    func getWeather(city: String, completion: @escaping (Weather?) -> ()) {
-        guard let url = URL(string: "http://api.openweathermap.org/data/2.5/weather?q=\(city)&appid=7f0a6369a06918fc7010f1239b0e0d43") else {
+    func getWeather(city: String, completion: @escaping (WeatherModel?) -> ()) {
+        guard let url = URL(string: "http://api.openweathermap.org/data/2.5/weather?q=\(city)&appid=7f0a6369a06918fc7010f1239b0e0d43&units=imperial") else {
             completion(nil)
             return
         }
