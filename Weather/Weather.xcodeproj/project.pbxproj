@@ -15,6 +15,7 @@
 		A69FDC0A24980480005B60AD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A69FDC0824980480005B60AD /* LaunchScreen.storyboard */; };
 		A69FDC15249804BF005B60AD /* Weather.swift in Sources */ = {isa = PBXBuildFile; fileRef = A69FDC14249804BF005B60AD /* Weather.swift */; };
 		A69FDC182498056D005B60AD /* WeatherService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A69FDC172498056D005B60AD /* WeatherService.swift */; };
+		A69FDC1A249808B7005B60AD /* WeatherViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A69FDC19249808B7005B60AD /* WeatherViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		A69FDC0B24980480005B60AD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A69FDC14249804BF005B60AD /* Weather.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Weather.swift; sourceTree = "<group>"; };
 		A69FDC172498056D005B60AD /* WeatherService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherService.swift; sourceTree = "<group>"; };
+		A69FDC19249808B7005B60AD /* WeatherViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +103,7 @@
 		A69FDC132498049D005B60AD /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
+				A69FDC19249808B7005B60AD /* WeatherViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -185,6 +188,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A69FDC182498056D005B60AD /* WeatherService.swift in Sources */,
+				A69FDC1A249808B7005B60AD /* WeatherViewModel.swift in Sources */,
 				A69FDC15249804BF005B60AD /* Weather.swift in Sources */,
 				A69FDBFE2498047E005B60AD /* AppDelegate.swift in Sources */,
 				A69FDC002498047E005B60AD /* SceneDelegate.swift in Sources */,
