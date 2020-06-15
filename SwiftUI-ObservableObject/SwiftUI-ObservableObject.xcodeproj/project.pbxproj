@@ -9,23 +9,29 @@
 /* Begin PBXBuildFile section */
 		A69FDBD6249196C3005B60AD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A69FDBD5249196C3005B60AD /* AppDelegate.swift */; };
 		A69FDBD8249196C3005B60AD /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A69FDBD7249196C3005B60AD /* SceneDelegate.swift */; };
-		A69FDBDA249196C3005B60AD /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A69FDBD9249196C3005B60AD /* ContentView.swift */; };
+		A69FDBDA249196C3005B60AD /* ContentViewFancyTimer.swift in Sources */ = {isa = PBXBuildFile; fileRef = A69FDBD9249196C3005B60AD /* ContentViewFancyTimer.swift */; };
 		A69FDBDC249196C4005B60AD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A69FDBDB249196C4005B60AD /* Assets.xcassets */; };
 		A69FDBDF249196C4005B60AD /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A69FDBDE249196C4005B60AD /* Preview Assets.xcassets */; };
 		A69FDBE2249196C4005B60AD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A69FDBE0249196C4005B60AD /* LaunchScreen.storyboard */; };
 		A69FDBEA249196F7005B60AD /* FancyTimer.swift in Sources */ = {isa = PBXBuildFile; fileRef = A69FDBE9249196F7005B60AD /* FancyTimer.swift */; };
+		A69FDBEC24919966005B60AD /* UserSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = A69FDBEB24919966005B60AD /* UserSettings.swift */; };
+		A69FDBEE249199DB005B60AD /* ContentViewUserSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = A69FDBED249199DB005B60AD /* ContentViewUserSettings.swift */; };
+		A69FDBF02497DED0005B60AD /* FancyScoreView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A69FDBEF2497DED0005B60AD /* FancyScoreView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		A69FDBD2249196C3005B60AD /* SwiftUI-ObservableObject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SwiftUI-ObservableObject.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A69FDBD5249196C3005B60AD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A69FDBD7249196C3005B60AD /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		A69FDBD9249196C3005B60AD /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		A69FDBD9249196C3005B60AD /* ContentViewFancyTimer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentViewFancyTimer.swift; sourceTree = "<group>"; };
 		A69FDBDB249196C4005B60AD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A69FDBDE249196C4005B60AD /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		A69FDBE1249196C4005B60AD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A69FDBE3249196C4005B60AD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A69FDBE9249196F7005B60AD /* FancyTimer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FancyTimer.swift; sourceTree = "<group>"; };
+		A69FDBEB24919966005B60AD /* UserSettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserSettings.swift; sourceTree = "<group>"; };
+		A69FDBED249199DB005B60AD /* ContentViewUserSettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentViewUserSettings.swift; sourceTree = "<group>"; };
+		A69FDBEF2497DED0005B60AD /* FancyScoreView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FancyScoreView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,12 +66,15 @@
 			children = (
 				A69FDBD5249196C3005B60AD /* AppDelegate.swift */,
 				A69FDBD7249196C3005B60AD /* SceneDelegate.swift */,
-				A69FDBD9249196C3005B60AD /* ContentView.swift */,
+				A69FDBD9249196C3005B60AD /* ContentViewFancyTimer.swift */,
 				A69FDBDB249196C4005B60AD /* Assets.xcassets */,
 				A69FDBE0249196C4005B60AD /* LaunchScreen.storyboard */,
 				A69FDBE3249196C4005B60AD /* Info.plist */,
 				A69FDBDD249196C4005B60AD /* Preview Content */,
 				A69FDBE9249196F7005B60AD /* FancyTimer.swift */,
+				A69FDBEB24919966005B60AD /* UserSettings.swift */,
+				A69FDBED249199DB005B60AD /* ContentViewUserSettings.swift */,
+				A69FDBEF2497DED0005B60AD /* FancyScoreView.swift */,
 			);
 			path = "SwiftUI-ObservableObject";
 			sourceTree = "<group>";
@@ -152,7 +161,10 @@
 				A69FDBD6249196C3005B60AD /* AppDelegate.swift in Sources */,
 				A69FDBEA249196F7005B60AD /* FancyTimer.swift in Sources */,
 				A69FDBD8249196C3005B60AD /* SceneDelegate.swift in Sources */,
-				A69FDBDA249196C3005B60AD /* ContentView.swift in Sources */,
+				A69FDBEC24919966005B60AD /* UserSettings.swift in Sources */,
+				A69FDBEE249199DB005B60AD /* ContentViewUserSettings.swift in Sources */,
+				A69FDBDA249196C3005B60AD /* ContentViewFancyTimer.swift in Sources */,
+				A69FDBF02497DED0005B60AD /* FancyScoreView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
