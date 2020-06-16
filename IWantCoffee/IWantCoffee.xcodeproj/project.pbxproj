@@ -18,6 +18,7 @@
 		A6A2DBDE24987D62002C0314 /* WebService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6A2DBDD24987D62002C0314 /* WebService.swift */; };
 		A6A2DBE124988722002C0314 /* OrderListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6A2DBE024988722002C0314 /* OrderListViewModel.swift */; };
 		A6A2DBE42498919E002C0314 /* OrderListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6A2DBE32498919E002C0314 /* OrderListView.swift */; };
+		A6A2DBE624995245002C0314 /* CreateOrderResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6A2DBE524995245002C0314 /* CreateOrderResponse.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +35,7 @@
 		A6A2DBDD24987D62002C0314 /* WebService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebService.swift; sourceTree = "<group>"; };
 		A6A2DBE024988722002C0314 /* OrderListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderListViewModel.swift; sourceTree = "<group>"; };
 		A6A2DBE32498919E002C0314 /* OrderListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderListView.swift; sourceTree = "<group>"; };
+		A6A2DBE524995245002C0314 /* CreateOrderResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateOrderResponse.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -93,6 +95,7 @@
 			children = (
 				A6A2DBD8249856BE002C0314 /* Coffee.swift */,
 				A6A2DBDA24985CBC002C0314 /* Order.swift */,
+				A6A2DBE524995245002C0314 /* CreateOrderResponse.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -195,6 +198,7 @@
 			files = (
 				A6A2DBDE24987D62002C0314 /* WebService.swift in Sources */,
 				A6A2DBE42498919E002C0314 /* OrderListView.swift in Sources */,
+				A6A2DBE624995245002C0314 /* CreateOrderResponse.swift in Sources */,
 				A6A2DBC42498565F002C0314 /* AppDelegate.swift in Sources */,
 				A6A2DBC62498565F002C0314 /* SceneDelegate.swift in Sources */,
 				A6A2DBDB24985CBC002C0314 /* Order.swift in Sources */,
