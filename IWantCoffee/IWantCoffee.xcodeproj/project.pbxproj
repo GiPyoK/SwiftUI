@@ -21,6 +21,7 @@
 		A6A2DBE624995245002C0314 /* CreateOrderResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6A2DBE524995245002C0314 /* CreateOrderResponse.swift */; };
 		A6A2DBE82499555B002C0314 /* AddCoffeeOrderViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6A2DBE72499555B002C0314 /* AddCoffeeOrderViewModel.swift */; };
 		A6A2DBEA2499608A002C0314 /* CoffeeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6A2DBE92499608A002C0314 /* CoffeeViewModel.swift */; };
+		A6A2DBEC2499651C002C0314 /* AddCoffeeOrderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6A2DBEB2499651C002C0314 /* AddCoffeeOrderView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,6 +41,7 @@
 		A6A2DBE524995245002C0314 /* CreateOrderResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateOrderResponse.swift; sourceTree = "<group>"; };
 		A6A2DBE72499555B002C0314 /* AddCoffeeOrderViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddCoffeeOrderViewModel.swift; sourceTree = "<group>"; };
 		A6A2DBE92499608A002C0314 /* CoffeeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoffeeViewModel.swift; sourceTree = "<group>"; };
+		A6A2DBEB2499651C002C0314 /* AddCoffeeOrderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddCoffeeOrderView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -127,6 +129,7 @@
 			children = (
 				A6A2DBC72498565F002C0314 /* ContentView.swift */,
 				A6A2DBE32498919E002C0314 /* OrderListView.swift */,
+				A6A2DBEB2499651C002C0314 /* AddCoffeeOrderView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -205,6 +208,7 @@
 				A6A2DBDE24987D62002C0314 /* WebService.swift in Sources */,
 				A6A2DBE42498919E002C0314 /* OrderListView.swift in Sources */,
 				A6A2DBE624995245002C0314 /* CreateOrderResponse.swift in Sources */,
+				A6A2DBEC2499651C002C0314 /* AddCoffeeOrderView.swift in Sources */,
 				A6A2DBC42498565F002C0314 /* AppDelegate.swift in Sources */,
 				A6A2DBC62498565F002C0314 /* SceneDelegate.swift in Sources */,
 				A6A2DBEA2499608A002C0314 /* CoffeeViewModel.swift in Sources */,
