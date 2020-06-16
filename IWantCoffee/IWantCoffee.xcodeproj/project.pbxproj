@@ -13,6 +13,10 @@
 		A6A2DBCA24985660002C0314 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A6A2DBC924985660002C0314 /* Assets.xcassets */; };
 		A6A2DBCD24985660002C0314 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A6A2DBCC24985660002C0314 /* Preview Assets.xcassets */; };
 		A6A2DBD024985660002C0314 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A6A2DBCE24985660002C0314 /* LaunchScreen.storyboard */; };
+		A6A2DBD9249856BE002C0314 /* Coffee.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6A2DBD8249856BE002C0314 /* Coffee.swift */; };
+		A6A2DBDB24985CBC002C0314 /* Order.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6A2DBDA24985CBC002C0314 /* Order.swift */; };
+		A6A2DBDE24987D62002C0314 /* WebService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6A2DBDD24987D62002C0314 /* WebService.swift */; };
+		A6A2DBE124988722002C0314 /* OrderListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6A2DBE024988722002C0314 /* OrderListViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +28,10 @@
 		A6A2DBCC24985660002C0314 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		A6A2DBCF24985660002C0314 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A6A2DBD124985661002C0314 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A6A2DBD8249856BE002C0314 /* Coffee.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coffee.swift; sourceTree = "<group>"; };
+		A6A2DBDA24985CBC002C0314 /* Order.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Order.swift; sourceTree = "<group>"; };
+		A6A2DBDD24987D62002C0314 /* WebService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebService.swift; sourceTree = "<group>"; };
+		A6A2DBE024988722002C0314 /* OrderListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderListViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +64,9 @@
 		A6A2DBC22498565F002C0314 /* IWantCoffee */ = {
 			isa = PBXGroup;
 			children = (
+				A6A2DBDF24988705002C0314 /* ViewModels */,
+				A6A2DBDC24987D58002C0314 /* Services */,
+				A6A2DBD7249856B0002C0314 /* Models */,
 				A6A2DBC32498565F002C0314 /* AppDelegate.swift */,
 				A6A2DBC52498565F002C0314 /* SceneDelegate.swift */,
 				A6A2DBC72498565F002C0314 /* ContentView.swift */,
@@ -73,6 +84,31 @@
 				A6A2DBCC24985660002C0314 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		A6A2DBD7249856B0002C0314 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				A6A2DBD8249856BE002C0314 /* Coffee.swift */,
+				A6A2DBDA24985CBC002C0314 /* Order.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		A6A2DBDC24987D58002C0314 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				A6A2DBDD24987D62002C0314 /* WebService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		A6A2DBDF24988705002C0314 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				A6A2DBE024988722002C0314 /* OrderListViewModel.swift */,
+			);
+			path = ViewModels;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -146,9 +182,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A6A2DBDE24987D62002C0314 /* WebService.swift in Sources */,
 				A6A2DBC42498565F002C0314 /* AppDelegate.swift in Sources */,
 				A6A2DBC62498565F002C0314 /* SceneDelegate.swift in Sources */,
+				A6A2DBDB24985CBC002C0314 /* Order.swift in Sources */,
+				A6A2DBE124988722002C0314 /* OrderListViewModel.swift in Sources */,
 				A6A2DBC82498565F002C0314 /* ContentView.swift in Sources */,
+				A6A2DBD9249856BE002C0314 /* Coffee.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
