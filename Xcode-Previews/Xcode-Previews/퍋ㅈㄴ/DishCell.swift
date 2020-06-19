@@ -11,9 +11,7 @@ import SwiftUI
 
 struct DishCell: View {
     var body: some View {
-        
-        Text("DishCell")
-        
+            Text("DishCell")
     }
 }
 
@@ -22,7 +20,23 @@ struct DishCell: View {
 
 struct DishCell_Preview: PreviewProvider {
     static var previews: some View {
-        DishCell()
+        
+        Group {
+            // DishCell().colorScheme(.dark)
+            
+            // ContentSizeCategory
+            
+            DishCell().previewDevice("iPhone SE")
+            
+            DishCell().previewLayout(.sizeThatFits)
+                .environment(\.sizeCategory, .extraSmall)
+            
+            DishCell().previewLayout(.sizeThatFits)
+                .environment(\.sizeCategory, .large)
+            
+            DishCell().previewLayout(.sizeThatFits)
+            .environment(\.sizeCategory, .extraExtraExtraLarge)
+        }
     }
 }
 
