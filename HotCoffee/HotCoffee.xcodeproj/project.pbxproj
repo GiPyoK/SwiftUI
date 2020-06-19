@@ -7,27 +7,29 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		A6A2DC1F249D50FF002C0314 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6A2DC1E249D50FF002C0314 /* AppDelegate.swift */; };
-		A6A2DC21249D50FF002C0314 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6A2DC20249D50FF002C0314 /* SceneDelegate.swift */; };
-		A6A2DC23249D50FF002C0314 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6A2DC22249D50FF002C0314 /* ContentView.swift */; };
-		A6A2DC25249D5100002C0314 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A6A2DC24249D5100002C0314 /* Assets.xcassets */; };
-		A6A2DC28249D5100002C0314 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A6A2DC27249D5100002C0314 /* Preview Assets.xcassets */; };
-		A6A2DC2B249D5100002C0314 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A6A2DC29249D5100002C0314 /* LaunchScreen.storyboard */; };
+		A6A2DC42249D51B6002C0314 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6A2DC41249D51B6002C0314 /* AppDelegate.swift */; };
+		A6A2DC44249D51B6002C0314 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6A2DC43249D51B6002C0314 /* SceneDelegate.swift */; };
+		A6A2DC47249D51B6002C0314 /* HotCoffee.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = A6A2DC45249D51B6002C0314 /* HotCoffee.xcdatamodeld */; };
+		A6A2DC49249D51B6002C0314 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6A2DC48249D51B6002C0314 /* ContentView.swift */; };
+		A6A2DC4B249D51B6002C0314 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A6A2DC4A249D51B6002C0314 /* Assets.xcassets */; };
+		A6A2DC4E249D51B6002C0314 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A6A2DC4D249D51B6002C0314 /* Preview Assets.xcassets */; };
+		A6A2DC51249D51B6002C0314 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A6A2DC4F249D51B6002C0314 /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		A6A2DC1B249D50FF002C0314 /* HotCoffee.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HotCoffee.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		A6A2DC1E249D50FF002C0314 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		A6A2DC20249D50FF002C0314 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		A6A2DC22249D50FF002C0314 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
-		A6A2DC24249D5100002C0314 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		A6A2DC27249D5100002C0314 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		A6A2DC2A249D5100002C0314 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		A6A2DC2C249D5100002C0314 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A6A2DC3E249D51B6002C0314 /* HotCoffee.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HotCoffee.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A6A2DC41249D51B6002C0314 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		A6A2DC43249D51B6002C0314 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		A6A2DC46249D51B6002C0314 /* HotCoffee.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = HotCoffee.xcdatamodel; sourceTree = "<group>"; };
+		A6A2DC48249D51B6002C0314 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		A6A2DC4A249D51B6002C0314 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A6A2DC4D249D51B6002C0314 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		A6A2DC50249D51B6002C0314 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		A6A2DC52249D51B6002C0314 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		A6A2DC18249D50FF002C0314 /* Frameworks */ = {
+		A6A2DC3B249D51B6002C0314 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -37,40 +39,41 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		A6A2DC12249D50FF002C0314 = {
+		A6A2DC35249D51B6002C0314 = {
 			isa = PBXGroup;
 			children = (
-				A6A2DC1D249D50FF002C0314 /* HotCoffee */,
-				A6A2DC1C249D50FF002C0314 /* Products */,
+				A6A2DC40249D51B6002C0314 /* HotCoffee */,
+				A6A2DC3F249D51B6002C0314 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		A6A2DC1C249D50FF002C0314 /* Products */ = {
+		A6A2DC3F249D51B6002C0314 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				A6A2DC1B249D50FF002C0314 /* HotCoffee.app */,
+				A6A2DC3E249D51B6002C0314 /* HotCoffee.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		A6A2DC1D249D50FF002C0314 /* HotCoffee */ = {
+		A6A2DC40249D51B6002C0314 /* HotCoffee */ = {
 			isa = PBXGroup;
 			children = (
-				A6A2DC1E249D50FF002C0314 /* AppDelegate.swift */,
-				A6A2DC20249D50FF002C0314 /* SceneDelegate.swift */,
-				A6A2DC22249D50FF002C0314 /* ContentView.swift */,
-				A6A2DC24249D5100002C0314 /* Assets.xcassets */,
-				A6A2DC29249D5100002C0314 /* LaunchScreen.storyboard */,
-				A6A2DC2C249D5100002C0314 /* Info.plist */,
-				A6A2DC26249D5100002C0314 /* Preview Content */,
+				A6A2DC41249D51B6002C0314 /* AppDelegate.swift */,
+				A6A2DC43249D51B6002C0314 /* SceneDelegate.swift */,
+				A6A2DC48249D51B6002C0314 /* ContentView.swift */,
+				A6A2DC4A249D51B6002C0314 /* Assets.xcassets */,
+				A6A2DC4F249D51B6002C0314 /* LaunchScreen.storyboard */,
+				A6A2DC52249D51B6002C0314 /* Info.plist */,
+				A6A2DC45249D51B6002C0314 /* HotCoffee.xcdatamodeld */,
+				A6A2DC4C249D51B6002C0314 /* Preview Content */,
 			);
 			path = HotCoffee;
 			sourceTree = "<group>";
 		};
-		A6A2DC26249D5100002C0314 /* Preview Content */ = {
+		A6A2DC4C249D51B6002C0314 /* Preview Content */ = {
 			isa = PBXGroup;
 			children = (
-				A6A2DC27249D5100002C0314 /* Preview Assets.xcassets */,
+				A6A2DC4D249D51B6002C0314 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
 			sourceTree = "<group>";
@@ -78,13 +81,13 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		A6A2DC1A249D50FF002C0314 /* HotCoffee */ = {
+		A6A2DC3D249D51B6002C0314 /* HotCoffee */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = A6A2DC2F249D5100002C0314 /* Build configuration list for PBXNativeTarget "HotCoffee" */;
+			buildConfigurationList = A6A2DC55249D51B6002C0314 /* Build configuration list for PBXNativeTarget "HotCoffee" */;
 			buildPhases = (
-				A6A2DC17249D50FF002C0314 /* Sources */,
-				A6A2DC18249D50FF002C0314 /* Frameworks */,
-				A6A2DC19249D50FF002C0314 /* Resources */,
+				A6A2DC3A249D51B6002C0314 /* Sources */,
+				A6A2DC3B249D51B6002C0314 /* Frameworks */,
+				A6A2DC3C249D51B6002C0314 /* Resources */,
 			);
 			buildRules = (
 			);
@@ -92,25 +95,25 @@
 			);
 			name = HotCoffee;
 			productName = HotCoffee;
-			productReference = A6A2DC1B249D50FF002C0314 /* HotCoffee.app */;
+			productReference = A6A2DC3E249D51B6002C0314 /* HotCoffee.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		A6A2DC13249D50FF002C0314 /* Project object */ = {
+		A6A2DC36249D51B6002C0314 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 1150;
 				LastUpgradeCheck = 1150;
 				ORGANIZATIONNAME = gipgip;
 				TargetAttributes = {
-					A6A2DC1A249D50FF002C0314 = {
+					A6A2DC3D249D51B6002C0314 = {
 						CreatedOnToolsVersion = 11.5;
 					};
 				};
 			};
-			buildConfigurationList = A6A2DC16249D50FF002C0314 /* Build configuration list for PBXProject "HotCoffee" */;
+			buildConfigurationList = A6A2DC39249D51B6002C0314 /* Build configuration list for PBXProject "HotCoffee" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -118,47 +121,48 @@
 				en,
 				Base,
 			);
-			mainGroup = A6A2DC12249D50FF002C0314;
-			productRefGroup = A6A2DC1C249D50FF002C0314 /* Products */;
+			mainGroup = A6A2DC35249D51B6002C0314;
+			productRefGroup = A6A2DC3F249D51B6002C0314 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				A6A2DC1A249D50FF002C0314 /* HotCoffee */,
+				A6A2DC3D249D51B6002C0314 /* HotCoffee */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		A6A2DC19249D50FF002C0314 /* Resources */ = {
+		A6A2DC3C249D51B6002C0314 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A6A2DC2B249D5100002C0314 /* LaunchScreen.storyboard in Resources */,
-				A6A2DC28249D5100002C0314 /* Preview Assets.xcassets in Resources */,
-				A6A2DC25249D5100002C0314 /* Assets.xcassets in Resources */,
+				A6A2DC51249D51B6002C0314 /* LaunchScreen.storyboard in Resources */,
+				A6A2DC4E249D51B6002C0314 /* Preview Assets.xcassets in Resources */,
+				A6A2DC4B249D51B6002C0314 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		A6A2DC17249D50FF002C0314 /* Sources */ = {
+		A6A2DC3A249D51B6002C0314 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A6A2DC1F249D50FF002C0314 /* AppDelegate.swift in Sources */,
-				A6A2DC21249D50FF002C0314 /* SceneDelegate.swift in Sources */,
-				A6A2DC23249D50FF002C0314 /* ContentView.swift in Sources */,
+				A6A2DC47249D51B6002C0314 /* HotCoffee.xcdatamodeld in Sources */,
+				A6A2DC42249D51B6002C0314 /* AppDelegate.swift in Sources */,
+				A6A2DC49249D51B6002C0314 /* ContentView.swift in Sources */,
+				A6A2DC44249D51B6002C0314 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		A6A2DC29249D5100002C0314 /* LaunchScreen.storyboard */ = {
+		A6A2DC4F249D51B6002C0314 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				A6A2DC2A249D5100002C0314 /* Base */,
+				A6A2DC50249D51B6002C0314 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -166,7 +170,7 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		A6A2DC2D249D5100002C0314 /* Debug */ = {
+		A6A2DC53249D51B6002C0314 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -226,7 +230,7 @@
 			};
 			name = Debug;
 		};
-		A6A2DC2E249D5100002C0314 /* Release */ = {
+		A6A2DC54249D51B6002C0314 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -280,7 +284,7 @@
 			};
 			name = Release;
 		};
-		A6A2DC30249D5100002C0314 /* Debug */ = {
+		A6A2DC56249D51B6002C0314 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -300,7 +304,7 @@
 			};
 			name = Debug;
 		};
-		A6A2DC31249D5100002C0314 /* Release */ = {
+		A6A2DC57249D51B6002C0314 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -323,25 +327,38 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		A6A2DC16249D50FF002C0314 /* Build configuration list for PBXProject "HotCoffee" */ = {
+		A6A2DC39249D51B6002C0314 /* Build configuration list for PBXProject "HotCoffee" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				A6A2DC2D249D5100002C0314 /* Debug */,
-				A6A2DC2E249D5100002C0314 /* Release */,
+				A6A2DC53249D51B6002C0314 /* Debug */,
+				A6A2DC54249D51B6002C0314 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		A6A2DC2F249D5100002C0314 /* Build configuration list for PBXNativeTarget "HotCoffee" */ = {
+		A6A2DC55249D51B6002C0314 /* Build configuration list for PBXNativeTarget "HotCoffee" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				A6A2DC30249D5100002C0314 /* Debug */,
-				A6A2DC31249D5100002C0314 /* Release */,
+				A6A2DC56249D51B6002C0314 /* Debug */,
+				A6A2DC57249D51B6002C0314 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		A6A2DC45249D51B6002C0314 /* HotCoffee.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				A6A2DC46249D51B6002C0314 /* HotCoffee.xcdatamodel */,
+			);
+			currentVersion = A6A2DC46249D51B6002C0314 /* HotCoffee.xcdatamodel */;
+			path = HotCoffee.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
-	rootObject = A6A2DC13249D50FF002C0314 /* Project object */;
+	rootObject = A6A2DC36249D51B6002C0314 /* Project object */;
 }
