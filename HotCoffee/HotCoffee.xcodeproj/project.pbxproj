@@ -16,6 +16,8 @@
 		A6A2DC51249D51B6002C0314 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A6A2DC4F249D51B6002C0314 /* LaunchScreen.storyboard */; };
 		A6A2DC5A249D58A1002C0314 /* CoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6A2DC59249D58A1002C0314 /* CoreDataManager.swift */; };
 		A6A2DC5D249D5977002C0314 /* NSManagedObjectContext+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6A2DC5C249D5977002C0314 /* NSManagedObjectContext+Extensions.swift */; };
+		A6A2DC60249D5D34002C0314 /* AddOrderViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6A2DC5F249D5D34002C0314 /* AddOrderViewModel.swift */; };
+		A6A2DC63249D5D6D002C0314 /* AddOrderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6A2DC62249D5D6D002C0314 /* AddOrderView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +32,8 @@
 		A6A2DC52249D51B6002C0314 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A6A2DC59249D58A1002C0314 /* CoreDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataManager.swift; sourceTree = "<group>"; };
 		A6A2DC5C249D5977002C0314 /* NSManagedObjectContext+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSManagedObjectContext+Extensions.swift"; sourceTree = "<group>"; };
+		A6A2DC5F249D5D34002C0314 /* AddOrderViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddOrderViewModel.swift; sourceTree = "<group>"; };
+		A6A2DC62249D5D6D002C0314 /* AddOrderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddOrderView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,11 +66,12 @@
 		A6A2DC40249D51B6002C0314 /* HotCoffee */ = {
 			isa = PBXGroup;
 			children = (
+				A6A2DC61249D5D59002C0314 /* Views */,
+				A6A2DC5E249D5CF1002C0314 /* View Models */,
 				A6A2DC5B249D5955002C0314 /* Extensions */,
 				A6A2DC58249D588C002C0314 /* Managers */,
 				A6A2DC41249D51B6002C0314 /* AppDelegate.swift */,
 				A6A2DC43249D51B6002C0314 /* SceneDelegate.swift */,
-				A6A2DC48249D51B6002C0314 /* ContentView.swift */,
 				A6A2DC4A249D51B6002C0314 /* Assets.xcassets */,
 				A6A2DC4F249D51B6002C0314 /* LaunchScreen.storyboard */,
 				A6A2DC52249D51B6002C0314 /* Info.plist */,
@@ -98,6 +103,23 @@
 				A6A2DC5C249D5977002C0314 /* NSManagedObjectContext+Extensions.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		A6A2DC5E249D5CF1002C0314 /* View Models */ = {
+			isa = PBXGroup;
+			children = (
+				A6A2DC5F249D5D34002C0314 /* AddOrderViewModel.swift */,
+			);
+			path = "View Models";
+			sourceTree = "<group>";
+		};
+		A6A2DC61249D5D59002C0314 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				A6A2DC48249D51B6002C0314 /* ContentView.swift */,
+				A6A2DC62249D5D6D002C0314 /* AddOrderView.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -176,6 +198,8 @@
 				A6A2DC49249D51B6002C0314 /* ContentView.swift in Sources */,
 				A6A2DC5A249D58A1002C0314 /* CoreDataManager.swift in Sources */,
 				A6A2DC44249D51B6002C0314 /* SceneDelegate.swift in Sources */,
+				A6A2DC63249D5D6D002C0314 /* AddOrderView.swift in Sources */,
+				A6A2DC60249D5D34002C0314 /* AddOrderViewModel.swift in Sources */,
 				A6A2DC5D249D5977002C0314 /* NSManagedObjectContext+Extensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
