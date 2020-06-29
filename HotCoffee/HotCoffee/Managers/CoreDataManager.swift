@@ -19,6 +19,23 @@ class CoreDataManager {
         self.moc = moc
     }
     
+    private func fetchOrder(name: String) -> Order? {
+        
+        var orders = [Order]()
+        
+        let request: NSFetchRequest<Order> = Order.fetchRequest()
+        request.predicate = NSPredicate(format: "name == %@", name)
+        
+        do {
+            orders = try self.moc.fetch(request)
+        } catch let error as NSError {
+            print(error)
+        }
+        
+        return orders.first
+        
+    }
+    
     func saveOrder(name: String, type: String) {
         let order = Order(context: self.moc)
         order.name = name
