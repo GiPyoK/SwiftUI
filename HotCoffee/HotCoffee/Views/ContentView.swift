@@ -34,9 +34,11 @@ struct ContentView: View {
                 }
             }
         }
-        .sheet(isPresented: $isPresented) {
-            AddOrderView()
-        }
+        .sheet(isPresented: $isPresented, onDismiss: {
+            self.orderListVM.fetchAllOrders()
+        }, content: {
+            AddOrderView(isPresented: self.$isPresented)
+        })
         .navigationBarTitle("Orders")
         .navigationBarItems(trailing: Button("Add New Item") {
             self.isPresented = true
