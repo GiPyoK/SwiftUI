@@ -36,6 +36,17 @@ class CoreDataManager {
         
     }
     
+    func deleteOrder(name: String) {
+        do {
+            if let order = fetchOrder(name: name) {
+                self.moc.delete(order)
+                try self.moc.save()
+            }
+        } catch let error as NSError {
+            print(error)
+        }
+    }
+    
     func saveOrder(name: String, type: String) {
         let order = Order(context: self.moc)
         order.name = name
