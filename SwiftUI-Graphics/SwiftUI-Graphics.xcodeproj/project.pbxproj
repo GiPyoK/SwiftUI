@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A63A816324BEB0A700FEF581 /* BarGraph.swift in Sources */ = {isa = PBXBuildFile; fileRef = A63A816224BEB0A700FEF581 /* BarGraph.swift */; };
 		A6A4BD6524BEADFD0025868C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6A4BD6424BEADFD0025868C /* AppDelegate.swift */; };
 		A6A4BD6724BEADFD0025868C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6A4BD6624BEADFD0025868C /* SceneDelegate.swift */; };
 		A6A4BD6A24BEADFD0025868C /* SwiftUI_Graphics.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = A6A4BD6824BEADFD0025868C /* SwiftUI_Graphics.xcdatamodeld */; };
@@ -17,6 +18,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		A63A816224BEB0A700FEF581 /* BarGraph.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BarGraph.swift; sourceTree = "<group>"; };
 		A6A4BD6124BEADFD0025868C /* SwiftUI-Graphics.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SwiftUI-Graphics.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A6A4BD6424BEADFD0025868C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A6A4BD6624BEADFD0025868C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -66,6 +68,7 @@
 				A6A4BD7524BEADFF0025868C /* Info.plist */,
 				A6A4BD6824BEADFD0025868C /* SwiftUI_Graphics.xcdatamodeld */,
 				A6A4BD6F24BEADFF0025868C /* Preview Content */,
+				A63A816224BEB0A700FEF581 /* BarGraph.swift */,
 			);
 			path = "SwiftUI-Graphics";
 			sourceTree = "<group>";
@@ -149,6 +152,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A63A816324BEB0A700FEF581 /* BarGraph.swift in Sources */,
 				A6A4BD6524BEADFD0025868C /* AppDelegate.swift in Sources */,
 				A6A4BD6724BEADFD0025868C /* SceneDelegate.swift in Sources */,
 				A6A4BD6C24BEADFD0025868C /* ContentView.swift in Sources */,
