@@ -11,7 +11,7 @@ import SwiftUI
 struct ContentView: View {
     var body: some View {
         
-        Circle()
+        BarGraph(reports: Report.all())
 // Basic Shapes
 //        VStack{
 //            Circle()
