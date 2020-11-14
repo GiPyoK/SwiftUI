@@ -18,17 +18,17 @@ struct ContentView: View {
             .animation(.spring())
             .offset(x: self.cardDragState.width, y: self.cardDragState.height)
             .gesture(DragGesture()
-                .onChanged { value in
-                    self.cardDragState = value.translation
-            }
-            .onEnded{ value in
-                self.cardDragState = CGSize.zero
-                }
-        )
+                        .onChanged { value in
+                            self.cardDragState = value.translation
+                        }
+                        .onEnded{ value in
+                            self.cardDragState = CGSize.zero
+                        }
+            )
             .gesture(TapGesture(count: 1)
-                .onEnded { _ in
-                    self.tapped.toggle()
-                })
+                        .onEnded { _ in
+                            self.tapped.toggle()
+                        })
         
     }
 }
