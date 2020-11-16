@@ -11,19 +11,24 @@ struct NeumorphicImageButton: View {
     
     @State private var isPressed: Bool = false
     
-    private var systemName: String
+    private var image: Image
+    private var imageColor: Color
+    private var backgroundColor: Color
+    
     private var onTap: () -> Void
     
-    init(systemName: String, onTap: @escaping () -> Void) {
-        self.systemName = systemName
+    init(image: Image, imageColor: Color, backgroundColor: Color, onTap: @escaping () -> Void) {
+        self.image = image
+        self.imageColor = imageColor
+        self.backgroundColor = backgroundColor
         self.onTap = onTap
     }
     
-    var gray: Color {
+    var darkShadow: Color {
         return Color.black.opacity(0.2)
     }
     
-    var white: Color {
+    var lightShadow: Color {
         return Color.white.opacity(0.7)
     }
     
@@ -32,66 +37,33 @@ struct NeumorphicImageButton: View {
         Button(action: {
             
             self.isPressed.toggle()
+            self.onTap()
             
-//            DispatchQueue.main.asyncAfter(deadline: .now() + 0.25) {
-//                self.isPressed = false
-//                self.onTap()
-//            }
+            DispatchQueue.main.asyncAfter(deadline: .now() + 0.25) {
+                self.isPressed = false
+            }
             
         }) {
-            Image(systemName:  "car.fill")
+            image
                 .resizable()
                 .frame(width: 60, height: 60)
                 .padding(30)
-                .foregroundColor(self.isPressed ? Color(#colorLiteral(red: 0.6000000238, green: 0.6000000238, blue: 0.6000000238, alpha: 0.199406036)) : Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
-                .background(Color.offWhite)
+                .foregroundColor(imageColor)
+                .background(backgroundColor)
+                .if(self.isPressed) { $0.glow(color: .green, radius: 8) }
         }
         .clipShape(Circle())
-        .if(!self.isPressed) { $0.shadow(color: Color.black.opacity(0.2), radius: 10, x: 10, y: 10)
-            .shadow(color: Color.white.opacity(0.7), radius: 10, x: -5, y: -5) }
-        .if(self.isPressed) { $0.overlay(
-            Circle()
-                .stroke(Color.gray, lineWidth: 4)
-                .blur(radius: 4)
-                .offset(x: 2, y: 2)
-                .mask(Circle().fill(LinearGradient(Color.black, Color.clear)))
-        )
-        .overlay(
-            Circle()
-                .stroke(Color.white, lineWidth: 8)
-                .blur(radius: 4)
-                .offset(x: -2, y: -2)
-                .mask(Circle().fill(LinearGradient(Color.clear, Color.black)))
-        ) }
+        .if(!self.isPressed) { $0.shadow(color: darkShadow, radius: 10, x: 10, y: 10)
+            .shadow(color: lightShadow, radius: 10, x: -5, y: -5) }
+        .if(self.isPressed) { $0.concaveNuemorphic(shape: Circle()) }
         .scaleEffect(self.isPressed ? 0.95 : 1.0)
         
     }
         .transition(.identity)
-        .animation(.easeInOut)
+        .animation(.easeInOut(duration: 0.25))
     }
 }
 
-extension View {
-    func `if`<Content: View>(_ conditional: Bool, content: (Self) -> Content) -> TupleView<(Self?, Content?)> {
-        if conditional { return TupleView((nil, content(self))) }
-        else { return TupleView((self, nil)) }
-    }
-}
 
-extension Color {
-    static let offWhite = Color(red: 225 / 255, green: 225 / 255, blue: 235 / 255)
-}
-
-extension LinearGradient {
-    init(_ colors: Color...) {
-        self.init(gradient: Gradient(colors: colors), startPoint: .topLeading, endPoint: .bottomTrailing)
-    }
-}
-
-struct NeumorphicImageButton_Previews: PreviewProvider {
-    static var previews: some View {
-        NeumorphicImageButton(systemName: "car") {}
-    }
-}
 
 
