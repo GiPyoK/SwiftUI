@@ -9,19 +9,28 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        ZStack {
-            Color.gray
-            
-            VStack {
-                NeumorphicImageButton(image: Image(systemName: "car"), imageColor: Color.white, backgroundColor: Color.gray) {
-                    // onTap event
-                }
+        VStack {
+            ZStack {
+                Color.offWhite
+                HStack {
+                    NeumorphicImageButton(image: Image(systemName: "heart.fill"), imageColor: Color.white, imageSize: 30, buttonColor: Color.offWhite, buttonSize: 40) {
+                        // onTap event
+                    }
                     .padding()
-                NuemorphicManualImageButton(image: Image(systemName: "car"), imageColor: Color.white, backgroundColor: Color.gray) {}
-                
-            }
+                    NuemorphicManualImageButton(image: Image(systemName: "heart.fill"), imageColor: Color.white, imageSize: 30, buttonColor: Color.offWhite, buttonSize: 40) {}
+                }
+            }.edgesIgnoringSafeArea(.all)
+            ZStack {
+                LinearGradient(Color.darkStart, Color.darkEnd)
+                HStack {
+                    NeumorphicImageButtonDark(image: Image(systemName: "heart.fill"), imageColor: Color.white, imageSize: 30, buttonColor: Color.darkEnd, buttonSize: 40) {}
+                        .padding()
+                    NeumorphicImageButtonDark(image: Image(systemName: "heart.fill"), imageColor: Color.white, imageSize: 30, buttonColor: Color.darkEnd, buttonSize: 40) {}
+                }
+            }.edgesIgnoringSafeArea(.all)
             
-        }.edgesIgnoringSafeArea(.all)
+        }
+        
     }
 }
 

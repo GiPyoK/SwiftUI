@@ -14,6 +14,7 @@
 		A695FF7B255FA86C0001F55D /* NeumorphicImageButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = A695FF7A255FA86C0001F55D /* NeumorphicImageButton.swift */; };
 		A695FF8025625BE80001F55D /* StyleExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A695FF7F25625BE80001F55D /* StyleExtensions.swift */; };
 		A695FF8325625E600001F55D /* NuemorphicManualImageButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = A695FF8225625E5F0001F55D /* NuemorphicManualImageButton.swift */; };
+		A695FF87256354F50001F55D /* NeumorphicImageButtonDark.swift in Sources */ = {isa = PBXBuildFile; fileRef = A695FF86256354F50001F55D /* NeumorphicImageButtonDark.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		A695FF7A255FA86C0001F55D /* NeumorphicImageButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NeumorphicImageButton.swift; sourceTree = "<group>"; };
 		A695FF7F25625BE80001F55D /* StyleExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StyleExtensions.swift; sourceTree = "<group>"; };
 		A695FF8225625E5F0001F55D /* NuemorphicManualImageButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NuemorphicManualImageButton.swift; sourceTree = "<group>"; };
+		A695FF86256354F50001F55D /* NeumorphicImageButtonDark.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NeumorphicImageButtonDark.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +64,7 @@
 				A695FF6C255FA7890001F55D /* ContentView.swift */,
 				A695FF7A255FA86C0001F55D /* NeumorphicImageButton.swift */,
 				A695FF8225625E5F0001F55D /* NuemorphicManualImageButton.swift */,
+				A695FF86256354F50001F55D /* NeumorphicImageButtonDark.swift */,
 				A695FF6E255FA7930001F55D /* Assets.xcassets */,
 				A695FF73255FA7930001F55D /* Info.plist */,
 				A695FF70255FA7930001F55D /* Preview Content */,
@@ -150,6 +153,7 @@
 				A695FF6D255FA7890001F55D /* ContentView.swift in Sources */,
 				A695FF8025625BE80001F55D /* StyleExtensions.swift in Sources */,
 				A695FF7B255FA86C0001F55D /* NeumorphicImageButton.swift in Sources */,
+				A695FF87256354F50001F55D /* NeumorphicImageButtonDark.swift in Sources */,
 				A695FF6B255FA7890001F55D /* NeumorphismApp.swift in Sources */,
 				A695FF8325625E600001F55D /* NuemorphicManualImageButton.swift in Sources */,
 			);

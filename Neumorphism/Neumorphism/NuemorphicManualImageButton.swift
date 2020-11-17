@@ -13,23 +13,19 @@ struct NuemorphicManualImageButton: View {
     
     private var image: Image
     private var imageColor: Color
-    private var backgroundColor: Color
+    private var imageSize: CGFloat
+    private var buttonColor: Color
+    private var buttonSize: CGFloat
     
     private var onTap: () -> Void
     
-    init(image: Image, imageColor: Color, backgroundColor: Color, onTap: @escaping () -> Void) {
+    init(image: Image, imageColor: Color, imageSize: CGFloat, buttonColor: Color, buttonSize: CGFloat, onTap: @escaping () -> Void) {
         self.image = image
         self.imageColor = imageColor
-        self.backgroundColor = backgroundColor
+        self.imageSize = imageSize
+        self.buttonColor = buttonColor
+        self.buttonSize = buttonSize
         self.onTap = onTap
-    }
-    
-    var darkShadow: Color {
-        return Color.black.opacity(0.2)
-    }
-    
-    var lightShadow: Color {
-        return Color.white.opacity(0.7)
     }
     
     var body: some View {
@@ -42,16 +38,15 @@ struct NuemorphicManualImageButton: View {
         }) {
             image
                 .resizable()
-                .frame(width: 60, height: 60)
-                .padding(30)
+                .frame(width: imageSize, height: imageSize)
+                .padding(buttonSize)
                 .foregroundColor(imageColor)
-                .background(backgroundColor)
+                .background(buttonColor)
                 .if(self.isPressed) { $0.glow(color: .green, radius: 8) }
         }
         .clipShape(Circle())
-        .if(!self.isPressed) { $0.shadow(color: darkShadow, radius: 10, x: 10, y: 10)
-                                .shadow(color: lightShadow, radius: 10, x: -5, y: -5) }
-        .if(self.isPressed) { $0.concaveNuemorphic(shape: Circle()) }
+        .if(!self.isPressed) { $0.convexNuemorphicLight() }
+        .if(self.isPressed) { $0.concaveNuemorphicLight(shape: Circle()) }
         .scaleEffect(self.isPressed ? 0.95 : 1.0)
         
     }

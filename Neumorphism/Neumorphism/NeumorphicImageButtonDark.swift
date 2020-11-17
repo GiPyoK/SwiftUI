@@ -1,13 +1,13 @@
 //
-//  NeumorphicImageButton.swift
+//  NeumorphicImageButtonDark.swift
 //  Neumorphism
 //
-//  Created by Gi Pyo Kim on 11/13/20.
+//  Created by Gi Pyo Kim on 11/16/20.
 //
 
 import SwiftUI
 
-struct NeumorphicImageButton: View {
+struct NeumorphicImageButtonDark: View {
     
     @State private var isPressed: Bool = false
     @State private var isOn: Bool = false
@@ -33,6 +33,7 @@ struct NeumorphicImageButton: View {
         ZStack {
         Button(action: {
             
+            print("hi")
             self.isPressed.toggle()
             self.isOn.toggle()
             self.onTap()
@@ -47,12 +48,12 @@ struct NeumorphicImageButton: View {
                 .frame(width: imageSize, height: imageSize)
                 .padding(buttonSize)
                 .foregroundColor(imageColor)
-                .background(buttonColor)
                 .if(self.isOn) { $0.glow(color: .green, radius: 8) }
+                .background(self.isPressed ? LinearGradient(Color.darkEnd, Color.darkStart):LinearGradient(Color.darkStart, Color.darkEnd))
         }
         .clipShape(Circle())
-        .if(!self.isPressed) { $0.convexNuemorphicLight() }
-        .if(self.isPressed) { $0.concaveNuemorphicLight(shape: Circle()) }
+        .if(!self.isPressed) { $0.convexNuemorphicDark() }
+        .if(self.isPressed) { $0.concaveNuemorphicDark() }
         .scaleEffect(self.isPressed ? 0.95 : 1.0)
         
     }
@@ -60,7 +61,4 @@ struct NeumorphicImageButton: View {
         .animation(.easeInOut(duration: 0.25))
     }
 }
-
-
-
 
