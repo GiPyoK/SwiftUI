@@ -7,6 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A647033025675D230043D121 /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A647032F25675D230043D121 /* WidgetKit.framework */; };
+		A647033225675D230043D121 /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A647033125675D230043D121 /* SwiftUI.framework */; };
+		A647033525675D230043D121 /* simpleWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = A647033425675D230043D121 /* simpleWidget.swift */; };
+		A647033725675D260043D121 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A647033625675D260043D121 /* Assets.xcassets */; };
+		A647033B25675D260043D121 /* simpleWidgetExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = A647032D25675D230043D121 /* simpleWidgetExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		A6470351256C99C60043D121 /* SimpleWidgetEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6470350256C99C60043D121 /* SimpleWidgetEntry.swift */; };
+		A6470355256C9EF60043D121 /* SimpleWidgetTimeline.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6470354256C9EF60043D121 /* SimpleWidgetTimeline.swift */; };
 		A695FF6B255FA7890001F55D /* NeumorphismApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A695FF6A255FA7890001F55D /* NeumorphismApp.swift */; };
 		A695FF6D255FA7890001F55D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A695FF6C255FA7890001F55D /* ContentView.swift */; };
 		A695FF6F255FA7930001F55D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A695FF6E255FA7930001F55D /* Assets.xcassets */; };
@@ -15,9 +22,42 @@
 		A695FF8025625BE80001F55D /* StyleExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A695FF7F25625BE80001F55D /* StyleExtensions.swift */; };
 		A695FF8325625E600001F55D /* NuemorphicManualImageButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = A695FF8225625E5F0001F55D /* NuemorphicManualImageButton.swift */; };
 		A695FF87256354F50001F55D /* NeumorphicImageButtonDark.swift in Sources */ = {isa = PBXBuildFile; fileRef = A695FF86256354F50001F55D /* NeumorphicImageButtonDark.swift */; };
+		A6F694BB256CA6A000BC64F0 /* SimpleWidgetEntryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6F694B5256CA4C100BC64F0 /* SimpleWidgetEntryView.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		A647033925675D260043D121 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A695FF5F255FA7890001F55D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A647032C25675D230043D121;
+			remoteInfo = simpleWidgetExtension;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		A647033C25675D260043D121 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				A647033B25675D260043D121 /* simpleWidgetExtension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		A647032D25675D230043D121 /* simpleWidgetExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = simpleWidgetExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		A647032F25675D230043D121 /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
+		A647033125675D230043D121 /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
+		A647033425675D230043D121 /* simpleWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = simpleWidget.swift; sourceTree = "<group>"; };
+		A647033625675D260043D121 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A647033825675D260043D121 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A6470350256C99C60043D121 /* SimpleWidgetEntry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleWidgetEntry.swift; sourceTree = "<group>"; };
+		A6470354256C9EF60043D121 /* SimpleWidgetTimeline.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleWidgetTimeline.swift; sourceTree = "<group>"; };
 		A695FF67255FA7890001F55D /* Neumorphism.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Neumorphism.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A695FF6A255FA7890001F55D /* NeumorphismApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NeumorphismApp.swift; sourceTree = "<group>"; };
 		A695FF6C255FA7890001F55D /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -28,9 +68,19 @@
 		A695FF7F25625BE80001F55D /* StyleExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StyleExtensions.swift; sourceTree = "<group>"; };
 		A695FF8225625E5F0001F55D /* NuemorphicManualImageButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NuemorphicManualImageButton.swift; sourceTree = "<group>"; };
 		A695FF86256354F50001F55D /* NeumorphicImageButtonDark.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NeumorphicImageButtonDark.swift; sourceTree = "<group>"; };
+		A6F694B5256CA4C100BC64F0 /* SimpleWidgetEntryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleWidgetEntryView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		A647032A25675D230043D121 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A647033225675D230043D121 /* SwiftUI.framework in Frameworks */,
+				A647033025675D230043D121 /* WidgetKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		A695FF64255FA7890001F55D /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -41,10 +91,66 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A647032E25675D230043D121 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A647032F25675D230043D121 /* WidgetKit.framework */,
+				A647033125675D230043D121 /* SwiftUI.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A647033325675D230043D121 /* simpleWidget */ = {
+			isa = PBXGroup;
+			children = (
+				A647034E25679A1C0043D121 /* App */,
+				A647034D25679A110043D121 /* Models */,
+				A647034C25679A0C0043D121 /* Views */,
+				A647034F25679A200043D121 /* Widget */,
+			);
+			path = simpleWidget;
+			sourceTree = "<group>";
+		};
+		A647034C25679A0C0043D121 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				A6F694B5256CA4C100BC64F0 /* SimpleWidgetEntryView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		A647034D25679A110043D121 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		A647034E25679A1C0043D121 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				A647033625675D260043D121 /* Assets.xcassets */,
+				A647033825675D260043D121 /* Info.plist */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		A647034F25679A200043D121 /* Widget */ = {
+			isa = PBXGroup;
+			children = (
+				A647033425675D230043D121 /* simpleWidget.swift */,
+				A6470350256C99C60043D121 /* SimpleWidgetEntry.swift */,
+				A6470354256C9EF60043D121 /* SimpleWidgetTimeline.swift */,
+			);
+			path = Widget;
+			sourceTree = "<group>";
+		};
 		A695FF5E255FA7890001F55D = {
 			isa = PBXGroup;
 			children = (
 				A695FF69255FA7890001F55D /* Neumorphism */,
+				A647033325675D230043D121 /* simpleWidget */,
+				A647032E25675D230043D121 /* Frameworks */,
 				A695FF68255FA7890001F55D /* Products */,
 			);
 			sourceTree = "<group>";
@@ -53,6 +159,7 @@
 			isa = PBXGroup;
 			children = (
 				A695FF67255FA7890001F55D /* Neumorphism.app */,
+				A647032D25675D230043D121 /* simpleWidgetExtension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -84,6 +191,23 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		A647032C25675D230043D121 /* simpleWidgetExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A647033F25675D260043D121 /* Build configuration list for PBXNativeTarget "simpleWidgetExtension" */;
+			buildPhases = (
+				A647032925675D230043D121 /* Sources */,
+				A647032A25675D230043D121 /* Frameworks */,
+				A647032B25675D230043D121 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = simpleWidgetExtension;
+			productName = simpleWidgetExtension;
+			productReference = A647032D25675D230043D121 /* simpleWidgetExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 		A695FF66255FA7890001F55D /* Neumorphism */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = A695FF76255FA7930001F55D /* Build configuration list for PBXNativeTarget "Neumorphism" */;
@@ -91,10 +215,12 @@
 				A695FF63255FA7890001F55D /* Sources */,
 				A695FF64255FA7890001F55D /* Frameworks */,
 				A695FF65255FA7890001F55D /* Resources */,
+				A647033C25675D260043D121 /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				A647033A25675D260043D121 /* PBXTargetDependency */,
 			);
 			name = Neumorphism;
 			productName = Neumorphism;
@@ -110,6 +236,9 @@
 				LastSwiftUpdateCheck = 1200;
 				LastUpgradeCheck = 1200;
 				TargetAttributes = {
+					A647032C25675D230043D121 = {
+						CreatedOnToolsVersion = 12.0;
+					};
 					A695FF66255FA7890001F55D = {
 						CreatedOnToolsVersion = 12.0;
 					};
@@ -129,11 +258,20 @@
 			projectRoot = "";
 			targets = (
 				A695FF66255FA7890001F55D /* Neumorphism */,
+				A647032C25675D230043D121 /* simpleWidgetExtension */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		A647032B25675D230043D121 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A647033725675D260043D121 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		A695FF65255FA7890001F55D /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -146,6 +284,17 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		A647032925675D230043D121 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A6470351256C99C60043D121 /* SimpleWidgetEntry.swift in Sources */,
+				A6F694BB256CA6A000BC64F0 /* SimpleWidgetEntryView.swift in Sources */,
+				A6470355256C9EF60043D121 /* SimpleWidgetTimeline.swift in Sources */,
+				A647033525675D230043D121 /* simpleWidget.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		A695FF63255FA7890001F55D /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -161,7 +310,57 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		A647033A25675D260043D121 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A647032C25675D230043D121 /* simpleWidgetExtension */;
+			targetProxy = A647033925675D260043D121 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin XCBuildConfiguration section */
+		A647033D25675D260043D121 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = FLZ8CLXX64;
+				INFOPLIST_FILE = "$(SRCROOT)/simpleWidget/App/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.Neumorphism.gipyokim.Neumorphism.simpleWidget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A647033E25675D260043D121 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = FLZ8CLXX64;
+				INFOPLIST_FILE = "$(SRCROOT)/simpleWidget/App/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.Neumorphism.gipyokim.Neumorphism.simpleWidget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 		A695FF74255FA7930001F55D /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -281,6 +480,7 @@
 		A695FF77255FA7930001F55D /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
@@ -303,6 +503,7 @@
 		A695FF78255FA7930001F55D /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
@@ -325,6 +526,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		A647033F25675D260043D121 /* Build configuration list for PBXNativeTarget "simpleWidgetExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A647033D25675D260043D121 /* Debug */,
+				A647033E25675D260043D121 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		A695FF62255FA7890001F55D /* Build configuration list for PBXProject "Neumorphism" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
