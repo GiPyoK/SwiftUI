@@ -15,7 +15,7 @@ struct WeatherWidget: Widget {
     var body: some WidgetConfiguration {
         StaticConfiguration(kind: kind, provider: WeatherTimeline()) { entry in
             WeatherEntryView(entry: entry)
-        }.supportedFamilies([.systemSmall])
+        }
         .configurationDisplayName("Weather Widget")
         .description("This widget displayer current weather")
     }

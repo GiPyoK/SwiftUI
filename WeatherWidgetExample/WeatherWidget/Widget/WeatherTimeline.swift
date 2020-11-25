@@ -12,11 +12,25 @@ struct WeatherTimeline: TimelineProvider {
     typealias Entry = WeatherEntry
     
     func placeholder(in context: Context) -> WeatherEntry {
-        return WeatherEntry(date: Date(), weather: Weather(name: "placeholder", temperature: 420, unit: "C", description: "jas"))
+        var weatherSnap = [Weather]()
+        
+        for _ in 0...9 {
+            weatherSnap.append(Weather(name: "placeholder", temperature: 420, unit: "C", description: "jas"))
+        }
+        
+        let entry = WeatherEntry(date: Date(), weatherInfo: weatherSnap)
+            
+        return entry
     }
     
     func getSnapshot(in context: Context, completion: @escaping (WeatherEntry) -> Void) {
-        let entry = WeatherEntry(date: Date(), weather: Weather(name: "Snapshot", temperature: 69, unit: "F", description: "jas"))
+        var weatherSnap = [Weather]()
+        
+        for _ in 0...9 {
+            weatherSnap.append(Weather(name: "Snapshot", temperature: 69, unit: "F", description: "jas"))
+        }
+        
+        let entry = WeatherEntry(date: Date(), weatherInfo: weatherSnap)
         completion(entry)
     }
     
@@ -25,19 +39,18 @@ struct WeatherTimeline: TimelineProvider {
         let refreshDate = Calendar.current.date(byAdding: .minute, value: 15, to: currentDate)!
         
         WeatherService().getWeather { (result) in
-            let weather: Weather
+            let weatherInfo: [Weather]
             
             if case .success(let fetchedData) = result {
-                weather = fetchedData.first!
+                weatherInfo = fetchedData
             } else {
-                weather = Weather(name: "Error", temperature: 0, unit: "F", description: "Error fetching weather")
+                let errorWeather = Weather(name: "Error", temperature: 0, unit: "F", description: "Error fetching weather")
+                weatherInfo = [errorWeather, errorWeather]
             }
             
-            let entry = WeatherEntry(date: currentDate, weather: weather)
+            let entry = WeatherEntry(date: currentDate, weatherInfo: weatherInfo)
             let timeline = Timeline(entries: [entry], policy: .after(refreshDate))
             completion(timeline)
         }
     }
-    
-    
 }
